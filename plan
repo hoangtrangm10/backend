@@ -1,0 +1,32 @@
+chatbot-backend/
+│
+├── .env                  # Fichier de configuration d'environnement
+├── main.py               # Point d'entrée principal
+│
+├── app/                  # Répertoire de l'application
+│   ├── __init__.py
+│   ├── api/              # Points de terminaison API
+│   │   ├── __init__.py
+│   │   ├── chat.py       # API de chat
+│   │   └── auth.py       # API d'authentification
+│   │
+│   ├── core/             # Cœur du système
+│   │   ├── config.py     # Configuration
+│   │   └── security.py   # Sécurité
+│   │
+│   ├── db/               # Base de données
+│   │   ├── database.py   # Connexion DB
+│   │   └── models.py     # Modèles de données
+│   │
+│   ├── services/         # Services
+│   │   ├── chat.py       # Traitement du chat
+│   │   └── rasa.py       # Connexion RASA
+│   │
+│   └── utils/            # Utilitaires
+│       ├── logging.py    # Journalisation
+│       └── helpers.py    # Fonctions d'aide
+│
+├── requirements.txt      # Bibliothèques requises
+└── tests/                # Répertoire de tests
+    ├── test_api.py
+    └── test_services.py
